@@ -3,6 +3,26 @@
     <head>
         <title>Elliot Liskin's Projects</title>
 
+        <style>
+            div.Header {
+                border-bottom:1px solid #ddd;
+                padding-top:10px;
+                padding-bottom:10px;
+                margin-bottom:10px;
+                padding-left:10px;
+            }
+            div.ProjectDescription
+            {
+                text-align:center;
+                line-height:0px;
+            }
+            div.ProjectDetails
+            {
+                width:300px;
+                margin:0 auto;
+            }
+        </style>
+
         <!--Links found on http://getbootstrap.com/getting-started/#download-cdn
          via https://github.com/gwu-business/badm-2301/blob/master/assignments/lab/personal-website.md -->
 
@@ -16,5 +36,67 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div class="Header">
+            <button type="back" value="Back button" onclick="location.href='index.html'">Back</button>
+            <h3 align="center">Projects</h3>
+        </div>
+        <p align="center">
+        My name is Elliot Liskin and I am a computer scientist.<br>
+        As such, all of my projects, whether in class or independent,<br>
+        have significant coded portions. Perhaps the only notable<br>
+        exception is Barco (described below), which had more<br>
+        business elements to it than my other projects.
+        </p>
+        <br>
+        <div class="ProjectDescription">
+            <h5 style="display:inline; font-weight:bold;">Kernel-Level File System Freezer,</h5>
+            <h5 style="display:inline; font-weight:normal;"><i>Operating Systems Class<i></h5>
+            <h5 style="font-weight:normal;"><i>August 2014 - December 2014<i></h5>
+        </div>
+        <div class="ProjectDetails">
+        <ul>
+            <li>Engineered a file system freezer that captures the state of a part of the file system in the Linux kernel</li>
+            <li>Gave the user the ability to freeze that part of the file system, allowing for a rollback of changes upon reboot</li>
+        </ul>
+        </div>
+        <br>
+        <div class="ProjectDescription">
+            <h5 style="display:inline; font-weight:bold;">Barco,</h5>
+            <h5 style="display:inline; font-weight:normal;"><i>GW Business Plan Competition Entry<i></h5>
+            <h5 style="font-weight:normal;"><i>September 2013 - May 2014<i></h5>
+        </div>
+        <div class="ProjectDetails">
+            <ul>
+                <li>Built an automated bartender named CARLOS (Contained Alcohol Releasing Logic Operated System)</li>
+                <li>Developed an iPhone app that allows the user to order drinks from CARLOS through his or her iPhone</li>
+                <li>Wrote a fifteen page business plan that was selected as one of ten finalists out of the 113 competing teams</li>
+            </ul>
+        </div>
+        <br>
+        <div class="ProjectDescription">
+            <h5 style="display:inline; font-weight:bold;">Geo Pro iOS App,</h5>
+            <h5 style="display:inline; font-weight:normal;"><i>Personal Project<i></h5>
+            <h5 style="font-weight:normal;"><i>April 2012 - Present<i></h5>
+        </div>
+        <div class="ProjectDetails">
+            <ul>
+                <li>Independently published an iPhone app in which the user competes against the computer in a geography game</li>
+                <li>Created an AI for the computer, giving the player the ability to choose from multiple levels of difficulty</li>
+                <li>Augmented gameplay with the ability to track high scores</li>
+            </ul>
+        </div>
+        <br>
+        <div class="ProjectDescription">
+            <h5 style="display:inline; font-weight:bold;">Multithreaded Chat Application,</h5>
+            <h5 style="display:inline; font-weight:normal;"><i>Software Engineering Class<i></h5>
+            <h5 style="font-weight:normal;"><i>August 2013 - December 2013<i></h5>
+        </div>
+        <div class="ProjectDetails">
+            <ul>
+                <li>Coded a multithreaded online chat application in Java</li>
+                <li>Added features for users to create and join different chatrooms</li>
+            </ul>
+        </div>
+        <br>
     </body>
 </html>
