@@ -1,16 +1,19 @@
 <!DOCTYPE html>
+<!-- Author: Elliot Liskin -->
+<!-- Email: elliotliskin@gwmail.gwu.edu -->
+<!-- Date: December 2015 -->
+<!-- Note: http://www.w3schools.com and the examples from lab were used for reference.
+           This is my first time designing and hosting a website. -->
 <html>
     <head>
         <title>Elliot Liskin's Projects</title>
 
+        <!--To reduce code duplication, the css for div.Header has been put in its own file so that it can be-->
+        <!--used by Activities.html (other css stylings aren't in that file as well because they're specific to-->
+        <!--this file).-->
+        <link rel="stylesheet" type="text/css" href="Styles.css">
+
         <style>
-            div.Header {
-                border-bottom:1px solid #ddd;
-                padding-top:10px;
-                padding-bottom:10px;
-                margin-bottom:10px;
-                padding-left:10px;
-            }
             div.ProjectDescription {
                 text-align:center;
                 line-height:0px;
@@ -32,6 +35,8 @@
             {
                 var circle = document.getElementById("circle");
 
+                // only create a new div if it doesn't exist in the DOM yet,
+                // otherwise we'll just use the one we got from the line above
                 if (circle == null)
                 {
                     circle = document.createElement("div");
@@ -69,8 +74,8 @@
         </div>
         <p align="center">
         My name is Elliot Liskin and I am a computer scientist.<br>
-        As such, all of my projects, whether in class or independent,<br>
-        have significant coded portions. Perhaps the only notable<br>
+        As such, all of my projects, whether in-class or independent,<br>
+        have significant coded portions. Perhaps the only<br>
         exception is Barco (described below), which had more<br>
         business elements to it than my other projects.
         </p>
